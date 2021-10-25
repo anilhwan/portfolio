@@ -41,12 +41,12 @@ $('.down').click(function(){
     $('html,body').animate({ scrollTop : $('#section2').offset().top-0},800);
 });
 
-$('.nav-icon').click(function(){
-    $('html,body').animate({ scrollTop : $('#section1').offset().top-0},800);
-});
+// $('.nav-icon').click(function(){
+//     $('html,body').animate({ scrollTop : $('#section1').offset().top-0},800);
+// });
 
 // 상단메뉴 클릭시 해당 페이지 애니메이션, 스크롤시 해당 페이지 메뉴 클래스 on
-var menu = $('.nav-list ul li');
+var menu = $('.nav-list ul li a');
 var contents = $('main>section');
 
 menu.click(function(event){
@@ -68,3 +68,17 @@ $(window).scroll(function(){
         }
     });
 });
+
+
+var text = document.getElementById("text");
+var typewriter = new Typewriter(text, {
+    loop: true,
+    autoStart:true
+});
+typewriter.typeString('어서오세요, 안일환 포트폴리오 입니다.')
+    .pauseFor(500)
+    .deleteAll()
+    .typeString('방문해주셔서 감사합니다.')
+    .pauseFor(500)
+    .deleteAll()
+    .start();
