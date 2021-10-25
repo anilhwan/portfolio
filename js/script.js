@@ -41,6 +41,10 @@ $('.down').click(function(){
     $('html,body').animate({ scrollTop : $('#section2').offset().top-0},800);
 });
 
+$('.nav-icon').click(function(){
+    $('html,body').animate({ scrollTop : $('#section1').offset().top-0},800);
+});
+
 // 상단메뉴 클릭시 해당 페이지 애니메이션, 스크롤시 해당 페이지 메뉴 클래스 on
 var menu = $('.nav-list ul li');
 var contents = $('main>section');

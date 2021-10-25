@@ -5,6 +5,7 @@
 /* 상단메뉴 */
 .header{position: fixed; z-index: 999; width: 100%; background: rgba(255, 255, 255, .5); top:-105px; transition: all .3s; box-shadow: 0 0 5px 1px rgb(0,0,0,.5);}
 #nav{display: flex; justify-content: space-between; align-items: center;}
+.nav-icon{cursor: pointer;}
 .nav-list{width: 800px;}
 .nav-list ul{display: flex; justify-content: space-between; width: 100%;}
 .nav-list ul li{width: 25%; text-align: center;}
