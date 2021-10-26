@@ -24,12 +24,7 @@
 #section1 .down{position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%); font-size: 20px; cursor: pointer;}
 /* 자기소개 */
 #section2{background:#00ff00;}
-#section2 .introduce{text-align: center; padding:80px 0; font-size: 40px; font-weight: bold;}
-#section2 .my-intro{display: flex; justify-content: space-between;}
-#section2 .left{flex: 1 1 49%;}
-#section2 .left img{width: 50%;}
-#section2 .center{width: 1px; background: chocolate;}
-#section2 .right{flex: 1 1 49%;text-align: center;}
+#section2 .introduce{text-align: center; padding-top:80px; font-size: 40px; font-weight: bold;}
 /* 포트폴리오 */
 #portfolio{background:#0000ff;}
 /* 연락처 */
@@ -50,6 +45,7 @@
     #section1 .main-info{font-size: 20px;}
 }  
 
+/* 메인화면 움직이는 공 */
 .top_circles .circles {position:absolute; width:200px; height:200px; border-radius:50%}
 .top_circles .circle1 {top:15%; left:-20%; background:-webkit-linear-gradient(0deg, rgb(86 255 0) 0%, rgb(235 255 0) 100%); background:-moz-linear-gradient(0deg, rgb(86 255 0) 0%, rgb(235 255 0) 100%); background:-o-linear-gradient(0deg, rgb(86 255 0) 0%, rgb(235 255 0) 100%); background:linear-gradient(0deg, rgb(86 255 0) 0%, rgb(235 255 0) 100%); -webkit-animation:moving1 10s none infinite alternate; -moz-animation:moving1 10s none infinite alternate; -o-animation:moving1 10s none infinite alternate; -ms-animation:moving1 10s none infinite alternate; animation:moving1 10s none infinite alternate}
 .top_circles .circle2 {top:40%; right:40%; background:-webkit-linear-gradient(0deg, rgb(63 68 247) 0%, rgb(107 255 201) 100%); background:-moz-linear-gradient(0deg, rgb(63 68 247) 0%, rgb(107 255 201) 100%); background:-o-linear-gradient(0deg, rgb(63 68 247) 0%, rgb(107 255 201) 100%); background:linear-gradient(0deg, rgb(63 68 247) 0%, rgb(107 255 201) 100%); -webkit-animation:moving2 20s none infinite alternate; -moz-animation:moving2 20s none infinite alternate; -o-animation:moving2 20s none infinite alternate; -ms-animation:moving2 20s none infinite alternate; animation:moving2 20s none infinite alternate}
