@@ -11,16 +11,17 @@
 .nav-list ul{display: flex; justify-content: space-between; width: 100%;}
 .nav-list ul li{width: 25%; text-align: center;}
 .nav-list ul li a{text-transform: uppercase; color: #000; font-weight: bold; line-height: 100px; display: block; font-size: 20px;}
-.nav-list ul li a.on{color:blue;}
+.nav-list ul li.on a{color:blue;}
 .nav-list ul li:hover a{color:blue;}
 /* 섹션 공통속성 */
 .section{position: relative; width: 100%;height: 100vh;}
 /* 메인 */
 #section1{text-align: center; font-weight: bold;background: #ddd;}
+.main-content{position: relative;z-index: 9; height: 100%;}
 #section1 .name{font-size: 150px; padding-top:100px;}
 #section1 .main-title{font-size: 90px;}
 #section1 .main-info{font-size: 40px;}
-#section1 .down{position: absolute; bottom: 30px; left: 50%; transform: translateX(-50%); font-size: 20px; cursor: pointer;}
+#section1 .down{position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%); font-size: 20px; cursor: pointer;}
 /* 자기소개 */
 #section2{background:#00ff00;}
 #section2 .introduce{text-align: center; padding:80px 0; font-size: 40px; font-weight: bold;}
@@ -48,3 +49,96 @@
     #section1 .main-title{font-size: 30px;}
     #section1 .main-info{font-size: 20px;}
 }  
+
+.top_circles .circles {position:absolute; width:200px; height:200px; border-radius:50%}
+.top_circles .circle1 {top:15%; left:-20%; background:-webkit-linear-gradient(0deg, rgb(86 255 0) 0%, rgb(235 255 0) 100%); background:-moz-linear-gradient(0deg, rgb(86 255 0) 0%, rgb(235 255 0) 100%); background:-o-linear-gradient(0deg, rgb(86 255 0) 0%, rgb(235 255 0) 100%); background:linear-gradient(0deg, rgb(86 255 0) 0%, rgb(235 255 0) 100%); -webkit-animation:moving1 10s none infinite alternate; -moz-animation:moving1 10s none infinite alternate; -o-animation:moving1 10s none infinite alternate; -ms-animation:moving1 10s none infinite alternate; animation:moving1 10s none infinite alternate}
+.top_circles .circle2 {top:40%; right:40%; background:-webkit-linear-gradient(0deg, rgb(63 68 247) 0%, rgb(107 255 201) 100%); background:-moz-linear-gradient(0deg, rgb(63 68 247) 0%, rgb(107 255 201) 100%); background:-o-linear-gradient(0deg, rgb(63 68 247) 0%, rgb(107 255 201) 100%); background:linear-gradient(0deg, rgb(63 68 247) 0%, rgb(107 255 201) 100%); -webkit-animation:moving2 20s none infinite alternate; -moz-animation:moving2 20s none infinite alternate; -o-animation:moving2 20s none infinite alternate; -ms-animation:moving2 20s none infinite alternate; animation:moving2 20s none infinite alternate}
+.top_circles .circle3 {bottom:-10px; right:0; background:-webkit-linear-gradient(0deg, rgba(68,25,224,1) 0%, rgba(25,142,224,1) 100%); background:-moz-linear-gradient(0deg, rgba(68,25,224,1) 0%, rgba(25,142,224,1) 100%); background:-o-linear-gradient(0deg, rgba(68,25,224,1) 0%, rgba(25,142,224,1) 100%); background:linear-gradient(0deg, rgba(68,25,224,1) 0%, rgba(25,142,224,1) 100%); -webkit-animation:moving3 5s none infinite alternate; -moz-animation:moving3 5s none infinite alternate; -o-animation:moving3 5s none infinite alternate; -ms-animation:moving3 5s none infinite alternate; animation:moving3 5s none infinite alternate}
+
+@-webkit-keyframes moving1 {
+    0%{transform:translate(0px, 50px)}
+    30%{transform:translate(30px, 90px)}
+    70%{transform:translate(60px, 204px)}
+    100%{transform:translate(120px, 80px)}
+}
+@-moz-keyframes moving1 {
+    0%{transform:translate(0px, 50px)}
+    30%{transform:translate(30px, 90px)}
+    70%{transform:translate(60px, 204px)}
+    100%{transform:translate(120px, 80px)}
+}
+@-o-keyframes moving1 {
+    0%{transform:translate(0px, 50px)}
+    30%{transform:translate(30px, 90px)}
+    70%{transform:translate(60px, 204px)}
+    100%{transform:translate(120px, 80px)}
+}
+@-ms-keyframes moving1 {
+    0%{transform:translate(0px, 50px)}
+    30%{transform:translate(30px, 90px)}
+    70%{transform:translate(60px, 204px)}
+    100%{transform:translate(120px, 80px)}
+}
+@keyframes moving1 {
+    0%{transform:translate(0px, 50px)}
+    30%{transform:translate(30px, 90px)}
+    70%{transform:translate(60px, 204px)}
+    100%{transform:translate(120px, 80px)}
+}
+
+@-webkit-keyframes moving2 {
+    0%{transform:translate(80px, 80px)}
+    50%{transform:translate(20px, -200px)}
+    70%{transform:translate(100px, -100px)}
+    100%{transform:translate(-50px, 100px)}
+}
+@-moz-keyframes moving2 {
+    0%{transform:translate(80px, 80px)}
+    50%{transform:translate(20px, -200px)}
+    70%{transform:translate(100px, -100px)}
+    100%{transform:translate(-50px, 100px)}
+}
+@-o-keyframes moving2 {
+    0%{transform:translate(80px, 80px)}
+    50%{transform:translate(20px, -200px)}
+    70%{transform:translate(100px, -100px)}
+    100%{transform:translate(-50px, 100px)}
+}
+@-ms-keyframes moving2 {
+    0%{transform:translate(80px, 80px)}
+    50%{transform:translate(20px, -200px)}
+    70%{transform:translate(100px, -100px)}
+    100%{transform:translate(-50px, 100px)}
+}
+@keyframes moving2 {
+    0%{transform:translate(80px, 80px)}
+    50%{transform:translate(20px, -200px)}
+    70%{transform:translate(100px, -100px)}
+    100%{transform:translate(-50px, 100px)}
+}
+
+@-webkit-keyframes moving3 {
+    0%{transform:translate(0, -10px)}
+    50%{transform:translate(-40px, -90px)}
+    100%{transform:translate(-70px, -240px)}
+}
+@-moz-keyframes moving3 {
+    0%{transform:translate(0, -10px)}
+    50%{transform:translate(-40px, -90px)}
+    100%{transform:translate(-70px, -240px)}
+}
+@-o-keyframes moving3 {
+    0%{transform:translate(0, -10px)}
+    50%{transform:translate(-40px, -90px)}
+    100%{transform:translate(-70px, -240px)}
+}
+@-ms-keyframes moving3 {
+    0%{transform:translate(0, -10px)}
+    50%{transform:translate(-40px, -90px)}
+    100%{transform:translate(-70px, -240px)}
+}
+@keyframes moving3 {
+    0%{transform:translate(0, -10px)}
+    50%{transform:translate(-40px, -90px)}
+    100%{transform:translate(-70px, -240px)}
+}
