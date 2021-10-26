@@ -31,9 +31,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
     <script src="js/all.min.js"></script>
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/core.js"></script>
+    <script src="js/swiper-bundle.js"></script>
     <script src="js/script.js" defer></script>
     <!-- IE9보다 낮거나 같으면 출력 -->
     <!--[if (lte IE 9)]>
@@ -91,10 +93,24 @@
                     
                 </div>    
             </section>
-            <section id="portfolio" class="section"><div class="container">스와이퍼로 포트폴리오 넣어라</div></section>
-            <section id="contact" class="section"><div class="container">연락처 남겨</div></section>
+            <section id="portfolio" class="section">
+                <div class="container">
+                    <h2>Portfolio</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">Slide 1</div>
+                      <div class="swiper-slide">Slide 2</div>
+                      <div class="swiper-slide">Slide 3</div>
+                      <div class="swiper-slide">Slide 4</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                  </div>
+                </div>
+            </section>
+            <section id="contact"><div class="container">연락처 남겨</div></section>
         </main>
-        <footer></footer>
+        <footer>dd</footer>
     </div>
 </body>
 </html>

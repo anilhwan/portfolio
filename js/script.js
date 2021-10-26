@@ -68,13 +68,15 @@ $(window).scroll(function(){
         }
     });
 });
+//-------------------------------------------------------
 
-
+// 타이핑효과
 var text = document.getElementById("text");
 var typewriter = new Typewriter(text, {
     loop: true,
     autoStart:true
 });
+
 typewriter.typeString('어서오세요, 안일환 포트폴리오 입니다.')
     .pauseFor(500)
     .deleteAll()
@@ -82,3 +84,32 @@ typewriter.typeString('어서오세요, 안일환 포트폴리오 입니다.')
     .pauseFor(500)
     .deleteAll()
     .start();
+// -------------------타이핑효과
+    var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        spaceBetween: 40,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        on: {
+            resize: function () {
+                swiper.changeDirection(getDirection());
+            }
+        },
+      });
+
+
+      function getDirection() {
+        var windowWidth = window.innerWidth;
+        var direction = window.innerWidth <= 760 ? "horizontal" : "vertical";
+
+        return direction;
+      }

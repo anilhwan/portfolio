@@ -15,6 +15,8 @@
 .nav-list ul li:hover a{color:blue;}
 /* 섹션 공통속성 */
 .section{position: relative; width: 100%;height: 100vh;}
+#contact{width: 100%;height: 90vh;}
+footer{width: 100%;height: 10vh;background-color: red;}
 /* 메인 */
 #section1{text-align: center; font-weight: bold;background: #ddd;}
 .main-content{position: relative;z-index: 9; height: 100%;}
@@ -23,12 +25,12 @@
 #section1 .main-info{font-size: 40px;}
 #section1 .down{position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%); font-size: 20px; cursor: pointer;}
 /* 자기소개 */
-#section2{background:#00ff00;}
+#section2{background:#000;}
 #section2 .introduce{text-align: center; padding-top:80px; font-size: 40px; font-weight: bold;}
 /* 포트폴리오 */
-#portfolio{background:#0000ff;}
+#portfolio{background:red;}
 /* 연락처 */
-#contact{background:orange;}
+#contact{background:#000;}
 @media screen and (max-width:1320px) {
     .nav-container{width: 100%; padding:0 20px;}
     .container{width: 100%; padding:100px 20px 0 20px;}
@@ -138,3 +140,37 @@
     50%{transform:translate(-40px, -90px)}
     100%{transform:translate(-70px, -240px)}
 }
+
+
+.swiper {
+    width: 100%;
+    height: 90%;
+
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
