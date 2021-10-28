@@ -5,30 +5,30 @@ var browser=0;      //파이어폭스 브라우자 판별 변수
 //browser[event-mousewheel] : 크롬/익스/사파리/오페라 등
 //browser[event-DOMMouseScroll] : 파이어폭스
 // 파이어폭스 브라우저 판별 => window.navator.userAgent
-// $('.section').each(function(index){
-//     $(this).on('mousewheel DOMMouseScroll',function(event){
-//         event.preventDefault();
-//         browser=window.navigator.userAgent.toLowerCase().indexOf('firefox');
-//         if (browser>=0) {
-//             wheelDelta=-event.detail*40;
-//         }else{
-//             wheelDelta=event.originalEvent.wheelDelta;
-//         }
-//         // console.log(wheelDelta);
-//         if (wheelDelta<0) {//-120 or -150 값을 가지면 다음섹션으로 이동
-//             if (index<$('.section').length -1) {
-//                 $('html, body').stop().animate({scrollTop:$(this).next().offset().top},500);
-//             }
-//         }else{
-//             if (index>0) {
-//                 $('html, body').stop().animate({scrollTop:$(this).prev().offset().top},500);
-//             }
-//         }
-//     });
-// });
+$('.section').each(function(index){
+    $(this).on('mousewheel DOMMouseScroll',function(event){
+        event.preventDefault();
+        browser=window.navigator.userAgent.toLowerCase().indexOf('firefox');
+        if (browser>=0) {
+            wheelDelta=-event.detail*40;
+        }else{
+            wheelDelta=event.originalEvent.wheelDelta;
+        }
+        // console.log(wheelDelta);
+        if (wheelDelta<0) {//-120 or -150 값을 가지면 다음섹션으로 이동
+            if (index<$('.section').length -1) {
+                $('html, body').stop().animate({scrollTop:$(this).next().offset().top},500);
+            }
+        }else{
+            if (index>0) {
+                $('html, body').stop().animate({scrollTop:$(this).prev().offset().top},500);
+            }
+        }
+    });
+});
 // 상단메뉴고정
 var header=$('.header');
-// let headerOffsetTop=$('#section2').offset().top;
+let headerOffsetTop=$('#section2').offset().top;
 $(window).scroll(function(){
     if ($(this).scrollTop()>=30) {
         header.css('top','0px')
