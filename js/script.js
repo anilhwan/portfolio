@@ -90,24 +90,12 @@ typewriter.typeString('어서오세요, 안일환 포트폴리오 입니다.')
         slidesPerView: 1,
         spaceBetween: 40,
         loop: true,
-        
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        on: {
-            resize: function () {
-                swiper.changeDirection(getDirection());
-            }
-        },
+          nextEl: ".right",
+          prevEl: ".left",
+        }
       });
-    //   function getDirection() {
-    //     var windowWidth = window.innerWidth;
-    //     var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
-
-    //     return direction;
-    //   }
