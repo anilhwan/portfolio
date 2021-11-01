@@ -86,11 +86,11 @@ typewriter.typeString('어서오세요, 안일환 포트폴리오 입니다.')
     .start();
 // -------------------타이핑효과
     var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
+        direction: "horizontal",
         slidesPerView: 1,
         spaceBetween: 40,
         loop: true,
-        loopFillGroupWithBlank: true,
+        
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
@@ -105,11 +105,9 @@ typewriter.typeString('어서오세요, 안일환 포트폴리오 입니다.')
             }
         },
       });
+    //   function getDirection() {
+    //     var windowWidth = window.innerWidth;
+    //     var direction = window.innerWidth <= 760 ? "vertical" : "horizontal";
 
-
-      function getDirection() {
-        var windowWidth = window.innerWidth;
-        var direction = window.innerWidth <= 760 ? "horizontal" : "vertical";
-
-        return direction;
-      }
+    //     return direction;
+    //   }

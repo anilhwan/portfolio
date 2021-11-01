@@ -18,14 +18,14 @@
 #contact{width: 100%;height: 90vh;}
 footer{width: 100%;height: 10vh;background-color: red;}
 /* 메인 */
-#section1{text-align: center; font-weight: bold;background: #ddd;}
+#section1{text-align: center; font-weight: bold;background: #fff;}
 .main-content{position: relative;z-index: 9; height: 100%;}
 #section1 .name{font-size: 150px; padding-top:100px;}
 #section1 .main-title{font-size: 90px;}
 #section1 .main-info{font-size: 40px;}
 #section1 .down{position: absolute; bottom: 100px; left: 50%; transform: translateX(-50%); font-size: 20px; cursor: pointer;}
 /* 자기소개 */
-#section2{background:#D6F5FF;}
+#section2{background:#fff;}
 .introduce{text-align: center;font-size: 40px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px;}
 .about-me{display: flex; justify-content: space-between; align-items: center; padding-top: 100px;}
 .my-info{width: 70%; display: flex;flex-wrap: wrap; align-content: space-around;}
@@ -37,10 +37,13 @@ footer{width: 100%;height: 10vh;background-color: red;}
 .skill-img li{width: 25%;}
 .skills{display: flex; flex-direction: column;}
 /* 포-폴리오 */
-#project{background:#ddd;}
-.pro-tit{text-align: center;font-size: 40px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px;}
+#project{background:#fff;}
+.pro-tit{text-align: center;font-size: 40px; font-weight: bold; text-transform: uppercase;padding-bottom: 20px;}
+.first-pro{display: flex; height: 100%; align-items: center; padding:0 50px;}
+/* .pro-img{width: 50%;} */
+.pro-info{width: 100%;}
 /* 연락처 */
-#contact{background:#E3FFE2;}
+#contact{background:#fff;}
 .contact-tit{text-align: center;font-size: 40px; font-weight: bold; text-transform: uppercase; margin-bottom: 20px;}
 /* 푸터 */
 footer{background-color: #e3ffe2c4;}
@@ -53,6 +56,7 @@ footer p{text-align: center;}
     .my-info>div>h3{margin-bottom: 15px; font-size: 20px;}
     .my-info>div>p{margin-bottom: 15px; font-size: 15px;}
     .my-info{padding-left: 50px;}
+    .my-pic{width: 250px;height: 250px;}
 }   
 
 @media screen and (max-width:768px) {
@@ -61,6 +65,9 @@ footer p{text-align: center;}
     #section1 .main-info{font-size: 30px;}
     .about-me{display: flex; flex-direction: column;padding-top: 0;}
     .my-info{width: 100%; display: flex;padding:0; text-align: center;}
+    .first-pro{flex-direction: column; align-items: center;}
+    .pro-img{width: 80%;}
+    .nav-list ul li a{font-size: 15px;}
 }   
 @media screen and (max-width:520px) {
     #section1 .name{font-size: 80px; padding-top:100px;}
@@ -74,6 +81,8 @@ footer p{text-align: center;}
     .education{width: 100% !important; padding-top:20px;}
     .skills{width: 100% !important;}
     .my-pic{width: 200px;height: 200px;}
+    .pro-img{width: 100%;}
+    .nav-list ul li a{font-size: 11px;}
 }  
 
 
@@ -170,33 +179,5 @@ footer p{text-align: center;}
     50%{transform:translate(-40px, -90px)}
     100%{transform:translate(-70px, -240px)}
 }
-.swiper {
-    width: 100%;
-    height: 80%;
-  }
-  .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .swiper-slide img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+.swiper {width: 100%; height: 80%;}
+.swiper-slide {display: flex; -webkit-box-pack: center; -ms-flex-pack: center; -webkit-justify-content: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; -webkit-align-items: center; align-items: center;}
