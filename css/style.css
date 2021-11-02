@@ -41,7 +41,7 @@ footer{width: 100%;height: 10vh;background-color: red;}
 .pro-tit{text-align: center;font-size: 40px; font-weight: bold; text-transform: uppercase;padding-bottom: 20px;}
 .first-pro{display: flex; height: 100%; align-items: center; padding:0 50px;}
 /* .pro-img{width: 50%;} */
-.pro-info{width: 100%;}
+.pro-info{width: 100%;height: 100%; padding-top: 100px;}
 .pro-info p{border-top: 1px solid #ddd;border-bottom:1px solid #ddd; padding:20px 0;}
 .pro-info span{width: 100px;height: 50px;display: block; border:1px solid #ddd;text-align: center; line-height: 50px;}
 .fire span{background-color: #f2d300;}
