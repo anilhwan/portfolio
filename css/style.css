@@ -86,9 +86,8 @@ footer p{text-align: center;}
     .skills{width: 100% !important;}
     .my-pic{width: 200px;height: 200px;}
     .pro-img{width: 100%;}
-    .nav-list ul li a{font-size: 11px;}
-}  
-
+    .nav-list ul li a{font-size: 11px; line-height: 50px;}
+}
 
 /* 메인화면 움직이는 공 */
 .top_circles .circles {position:absolute; width:200px; height:200px; border-radius:50%}
