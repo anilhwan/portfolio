@@ -76,17 +76,18 @@ footer p{text-align: center;}
 @media screen and (max-width:520px) {
     #section1 .name{font-size: 80px; padding-top:100px;}
     #section1 .main-title{font-size: 30px;}
-    #section1 .main-info{font-size: 20px;}
+    #section1 .main-info{font-size: 10px;}
     .introduce{font-size: 20px;}
     .my-info{align-content: space-around;}
-    .my-info>div>h3{margin-bottom: 5px; font-size: 20px;}
-    .my-info>div>p{margin-bottom: 5px; font-size: 15px;}
+    .my-info>div>h3{margin-bottom: 5px; font-size: 15px;}
+    .my-info>div>p{margin-bottom: 5px; font-size: 13px;}
     .skill-img{flex-wrap: nowrap;}
     .education{width: 100% !important; padding-top:10px;}
     .skills{width: 100% !important;}
     .my-pic{width: 200px;height: 200px;}
     .pro-img{width: 100%;}
     .nav-list ul li a{font-size: 11px; line-height: 50px;}
+    .container{padding-top:50px;}
 }
 
 /* 메인화면 움직이는 공 */
