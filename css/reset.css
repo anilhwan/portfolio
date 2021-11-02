@@ -3,7 +3,10 @@
 /* 여백 초기화 */
 *{margin: 0;padding: 0; box-sizing: border-box;}
 /* a 링크 초기화 */
-body{font-family:'Noto Sans KR';}
+body{font-family:'Noto Sans KR';background-color: #e4eee9;
+    background-image: linear-gradient(315deg, #e4eee9 0%, #93a5ce 74%);
+    
+    }
 a {text-decoration: none;}
 /* 블릿기호 초기화 */
 ul,li,ol {list-style:none;}
