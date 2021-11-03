@@ -112,7 +112,7 @@ function fnCopyToClipboard(str) {
   }
 $('.kakao img').click(function() {
     fnCopyToClipboard('1hwan');
-    alert('클립보드로 복사되었습니다.');
+    alert('클립보드로 복사되었습니다. 카카오톡 실행 후 붙여넣기 해주세요.');
 });
 $('.email img').click(function() {
     fnCopyToClipboard('dlfghks0922@naver.com');
@@ -130,8 +130,19 @@ $('.git-hub img').click(function() {
 
 $('.kakao').hover(function(){
     $(this).find('img').attr({src:'./img/kakaoprofile.png',alt:'카카오톡프로필'});
-    $(this).find('span').text('QR코드스캔 또는 이미지를 클릭해주세요');
+    $(this).find('span').html('QR코드스캔 또는 이미지를 클릭해주세요 <button class="modal-pop">QR코드크게보기</button>');
+    modalPop();
 },function(){
     $(this).find('img').attr({src:'./img/kakaotalk.png',alt:'카카오톡'});
     $(this).find('span').text('ID :1hwan');
 })
+
+function modalPop(){
+    $(".modal-pop").click(function(){
+        $('.modal').fadeIn();
+    });
+
+    $(".modal_close_btn").click(function(){
+        $('.modal').fadeOut();
+    });
+}
