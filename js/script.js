@@ -130,6 +130,9 @@ $('.git-hub img').click(function() {
 
 
 if (Modernizr.touchevents) {
+    
+    
+} else {
     $('.kakao').hover(function(){
         $(this).find('img').attr({src:'./img/kakaoprofile.png',alt:'카카오톡프로필'});
         $(this).find('span').html('QR코드스캔 또는 이미지를 클릭해주세요 <button class="modal-pop">QR코드크게보기</button>');
@@ -148,6 +151,4 @@ if (Modernizr.touchevents) {
             $('.modal').fadeOut();
         });
     }
-} else {
-    
 }
