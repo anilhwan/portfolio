@@ -84,7 +84,7 @@ typewriter.typeString('어서오세요, 안일환 포트폴리오 입니다.')
     .pauseFor(500)
     .deleteAll()
     .start();
-// -------------------타이핑효과
+// 포트폴리오 스와이퍼
     var swiper = new Swiper(".mySwiper", {
         direction: "horizontal",
         slidesPerView: 1,
@@ -99,3 +99,39 @@ typewriter.typeString('어서오세요, 안일환 포트폴리오 입니다.')
           prevEl: ".left",
         }
       });
+// 연락처 복사기능
+function fnCopyToClipboard(str) {
+    // str이 복사하고자 하는 문자열
+    var tempElement = document.createElement("textarea");
+    document.body.appendChild(tempElement);
+    tempElement.value = str;
+    tempElement.select();
+    document.execCommand('copy');
+    document.body.removeChild(tempElement);
+
+  }
+$('.kakao img').click(function() {
+    fnCopyToClipboard('1hwan');
+    alert('클립보드로 복사되었습니다.');
+});
+$('.email img').click(function() {
+    fnCopyToClipboard('dlfghks0922@naver.com');
+    alert('클립보드로 복사되었습니다.');
+});
+$('.phone img').click(function() {
+    fnCopyToClipboard('01094941376');
+    alert('클립보드로 복사되었습니다.');
+});
+$('.git-hub img').click(function() {
+    fnCopyToClipboard('https://github.com/anilhwan');
+    alert('클립보드로 복사되었습니다.');
+});
+// 카카오톡 이미지, 텍스트 바꾸기
+
+$('.kakao').hover(function(){
+    $(this).find('img').attr({src:'./img/kakaoprofile.png',alt:'카카오톡프로필'});
+    $(this).find('span').text('QR코드스캔 또는 이미지를 클릭해주세요');
+},function(){
+    $(this).find('img').attr({src:'./img/kakaotalk.png',alt:'카카오톡'});
+    $(this).find('span').text('ID :1hwan');
+})
