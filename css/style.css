@@ -224,4 +224,4 @@ footer p{text-align: center;}
 .modal_content{position: absolute; top: 50%;left: 50%; transform: translate(-50%,-50%);}
 .modal_content img{width: 100%;}
 .modal_close_btn{position: absolute; right: -50px; top: 0px; cursor: pointer;}
-.modal-pop{border: 1px solid skyblue; background-color:#fff; color: skyblue; padding: 5px; }
+.modal-pop{border: 1px solid skyblue; background-color:#fff; color: skyblue; padding: 5px; cursor: pointer;}
