@@ -103,13 +103,14 @@ footer p{text-align: center;}
     .pro-img{width: 100%;}
     .nav-list ul li a{font-size: 11px; line-height: 50px;}
     .container{padding-top:50px;}
-    .thankyou{font-size: 30px;}
+    .thankyou{font-size: 25px;}
     .pro-info h2,h3{font-size: 18px;}
 
 }
 @media screen and (max-width:400px) {
     .contact-box ul{height: 90%;}
     .contact-box ul li{width: 100%; height: auto; padding-top: 0;}
+    .contact-box ul li span{padding-top:5px;}
     .contact-box>p{font-size: 13px;}
     .contact-box{padding: 0;}
     footer p{font-size: 14px;}

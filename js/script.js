@@ -128,21 +128,26 @@ $('.git-hub img').click(function() {
 });
 // 카카오톡 이미지, 텍스트 바꾸기
 
-$('.kakao').hover(function(){
-    $(this).find('img').attr({src:'./img/kakaoprofile.png',alt:'카카오톡프로필'});
-    $(this).find('span').html('QR코드스캔 또는 이미지를 클릭해주세요 <button class="modal-pop">QR코드크게보기</button>');
-    modalPop();
-},function(){
-    $(this).find('img').attr({src:'./img/kakaotalk.png',alt:'카카오톡'});
-    $(this).find('span').text('ID :1hwan');
-})
 
-function modalPop(){
-    $(".modal-pop").click(function(){
-        $('.modal').fadeIn();
-    });
-
-    $(".modal_close_btn").click(function(){
-        $('.modal').fadeOut();
-    });
+if (Modernizr.touchevents) {
+    $('.kakao').hover(function(){
+        $(this).find('img').attr({src:'./img/kakaoprofile.png',alt:'카카오톡프로필'});
+        $(this).find('span').html('QR코드스캔 또는 이미지를 클릭해주세요 <button class="modal-pop">QR코드크게보기</button>');
+        modalPop();
+    },function(){
+        $(this).find('img').attr({src:'./img/kakaotalk.png',alt:'카카오톡'});
+        $(this).find('span').text('ID :1hwan');
+    })
+    
+    function modalPop(){
+        $(".modal-pop").click(function(){
+            $('.modal').fadeIn();
+        });
+    
+        $(".modal_close_btn").click(function(){
+            $('.modal').fadeOut();
+        });
+    }
+} else {
+    
 }
