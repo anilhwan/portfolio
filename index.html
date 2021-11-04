@@ -37,7 +37,24 @@
     <script src="js/core.js"></script>
     <script src="js/swiper-bundle.js"></script>
     <script src="js/script.js" defer></script>
-    
+    <!-- <script>
+        // 익스플로러 실행시 경고창
+      var agent = navigator.userAgent.toLowerCase();
+        if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+             alert('익스플로러는 지원하지 않습니다. 엣지 또는 크롬으로 접속해주세요.')
+        } 
+    </script> -->
+    <script>       
+function noIE(msg){
+  if(navigator.userAgent.indexOf('Trident') > 0){
+    location.href = "microsoft-edge:" + location.href;
+    alert(msg)
+    setTimeout(close);
+  }
+}
+    </script>
+
+    <script>noIE('인터넷 익스플로러에서 엣지를 실행할 때 보일 메시지')</script>
 </head>
 <body>
     <ul id="skip">
