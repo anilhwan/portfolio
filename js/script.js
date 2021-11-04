@@ -76,7 +76,6 @@ var typewriter = new Typewriter(text, {
     loop: true,
     autoStart:true
 });
-
 typewriter.typeString('어서오세요, 안일환 포트폴리오 입니다.')
     .pauseFor(500)
     .deleteAll()
@@ -108,7 +107,6 @@ function fnCopyToClipboard(str) {
     tempElement.select();
     document.execCommand('copy');
     document.body.removeChild(tempElement);
-
   }
 $('.kakao img').click(function() {
     fnCopyToClipboard('1hwan');
@@ -126,23 +124,24 @@ $('.git-hub img').click(function() {
     fnCopyToClipboard('https://github.com/anilhwan');
     alert('클립보드로 복사되었습니다.');
 });
-// 카카오톡 이미지, 텍스트 바꾸기
-
-$('.kakao').hover(function(){
-    $(this).find('img').attr({src:'./img/kakaoprofile.png',alt:'카카오톡프로필'});
-    $(this).find('span').html('QR코드스캔 또는 이미지를 클릭해주세요 <button class="modal-pop">QR코드크게보기</button>');
-    modalPop();
-},function(){
-    $(this).find('img').attr({src:'./img/kakaotalk.png',alt:'카카오톡'});
-    $(this).find('span').text('ID :1hwan');
-})
-
-function modalPop(){
-    $(".modal-pop").click(function(){
-        $('.modal').fadeIn();
+// 카카오톡 이미지, 텍스트 바꾸기 해상도768이상일때 실행
+if (window.matchMedia('(min-width: 768px)').matches){
+    $('.kakao').hover(function(){
+        $(this).find('img').attr({src:'./img/kakaoprofile.png',alt:'카카오톡프로필'});
+        $(this).find('span').html('QR코드스캔 또는 이미지를 클릭해주세요 <button class="modal-pop">QR코드크게보기</button>');
+        modalPop();
+    },function(){
+        $(this).find('img').attr({src:'./img/kakaotalk.png',alt:'카카오톡'});
+        $(this).find('span').text('ID :1hwan');
     });
-
-    $(".modal_close_btn").click(function(){
-        $('.modal').fadeOut();
-    });
+    function modalPop(){
+        $(".modal-pop").click(function(){
+            $('.modal').fadeIn();
+            $('body').addClass('scroll');
+        });
+        $(".modal_close_btn").click(function(){
+            $('.modal').fadeOut();
+            $('body').removeClass('scroll');
+        });
+    }
 }
