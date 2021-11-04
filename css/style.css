@@ -75,8 +75,8 @@ footer p{text-align: center;}
     .my-info>div>p{margin-bottom: 15px; font-size: 15px;}
     .my-info{padding-left: 50px;}
     .my-pic{width: 250px;height: 250px;}
-    .contact-box ul{flex-wrap: wrap}
-    .contact-box ul li{width: 50%; height: 50%;padding-top: 40px;}
+    .contact-box ul{flex-wrap: wrap; margin-top: 20px;}
+    .contact-box ul li{width: 50%;}
     .contact-box ul li img{width: 25%;}
 }   
 @media screen and (max-width:768px) {
@@ -108,6 +108,7 @@ footer p{text-align: center;}
 }
 @media screen and (max-width:400px) {
     .contact-box ul{height: 90%;}
+    .thankyou{margin-top:10px;}
     .contact-box ul li{width: 100%; height: auto; padding-top: 0;}
     .contact-box ul li span{padding-top:5px;}
     .contact-box>p{font-size: 13px;}
