@@ -145,6 +145,8 @@ if (window.matchMedia('(min-width: 768px)').matches){
         });
     }
 }
+
+// qr코드창 외부영역 클릭시 나가기기능
 $(document).mouseup(function (e){
     var container = $('.pop');
     if(container.has(e.target).length === 0){
@@ -152,3 +154,8 @@ $(document).mouseup(function (e){
       $('body').removeClass('scroll');
     }
   });
+
+  var agent = navigator.userAgent.toLowerCase();
+  if ( (navigator.appName == 'Netscape' && agent.indexOf('trident') != -1) || (agent.indexOf("msie") != -1)) {
+       alert('test')
+  }  
