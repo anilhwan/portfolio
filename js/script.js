@@ -110,7 +110,7 @@ function fnCopyToClipboard(str) {
   }
 $('.kakao img').click(function() {
     fnCopyToClipboard('1hwan');
-    alert('클립보드로 복사되었습니다. 카카오톡 실행 후 붙여넣기 해주세요.');
+    alert('클립보드로 복사되었습니다. 카카오톡 실행 후 ID검색창에 붙여넣기 해주세요.');
 });
 $('.email img').click(function() {
     fnCopyToClipboard('dlfghks0922@naver.com');
@@ -128,20 +128,27 @@ $('.git-hub img').click(function() {
 if (window.matchMedia('(min-width: 768px)').matches){
     $('.kakao').hover(function(){
         $(this).find('img').attr({src:'./img/kakaoprofile.png',alt:'카카오톡프로필'});
-        $(this).find('span').html('QR코드스캔 또는 이미지를 클릭해주세요 <button class="modal-pop">QR코드크게보기</button>');
+        $(this).find('span').html('QR코드스캔 또는 이미지를 클릭해주세요 <button class="pop-btn">QR코드크게보기</button>');
         modalPop();
     },function(){
         $(this).find('img').attr({src:'./img/kakaotalk.png',alt:'카카오톡'});
         $(this).find('span').text('ID :1hwan');
     });
     function modalPop(){
-        $(".modal-pop").click(function(){
-            $('.modal').fadeIn();
+        $(".pop-btn").click(function(){
+            $('.pop').fadeIn();
             $('body').addClass('scroll');
         });
-        $(".modal_close_btn").click(function(){
-            $('.modal').fadeOut();
+        $(".pop-close-btn").click(function(){
+            $('.pop').fadeOut();
             $('body').removeClass('scroll');
         });
     }
 }
+$(document).mouseup(function (e){
+    var container = $('.pop');
+    if(container.has(e.target).length === 0){
+      container.css('display','none');
+      $('body').removeClass('scroll');
+    }
+  });
