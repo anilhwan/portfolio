@@ -128,9 +128,17 @@ footer p{text-align: center;}
     .thankyou{margin-top:10px;}
     .contact-box ul li{width: 100%; height: auto; padding-top: 0;}
     .contact-box ul li span{padding-top:5px;}
+    .contact-box ul li a{padding-top:5px; font-size: 14px;}
     .contact-box>p{font-size: 13px;}
     .contact-box{padding: 0;}
     footer p{font-size: 14px;}
+    .contact-tit{margin-bottom: 10px;}
+    .contact-box ul{margin-top: 10px;}
+    .pro-info p{padding:10px 0; font-size: 14px;}
+    .pro-info h3{padding:5px 0;}
+    .pro-info span{height: 35px;line-height: 35px;}
+    .pro-info a{padding:10px}
+    .contact-box ul li img{width: 20%;}
 }
 /* 메인화면 움직이는 공 */
 .top_circles .circles {position:absolute; width:200px; height:200px; border-radius:50%}
