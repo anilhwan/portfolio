@@ -28,7 +28,7 @@
 .about-me{display: flex; justify-content: space-between; align-items: center; margin-top: 100px;}
 .my-info{width: 70%; display: flex;flex-wrap: wrap;}
 .my-info>div{width: 50%;}
-.my-info>div:nth-child(3),.my-info>div:nth-child(4){padding-top: 20px;}
+/* .my-info>div:nth-child(3),.my-info>div:nth-child(4){padding-top: 20px;} */
 .my-info>div>h3{text-transform: uppercase; margin-bottom: 20px; font-size: 25px;}
 .my-info>div>p{margin-bottom: 20px; font-size: 20px;}
 .my-pic{width: 300px;height: 300px; background: url(../img/me.png) no-repeat; border-radius: 50%; background-size: cover;}
@@ -103,7 +103,7 @@ footer p{text-align: center;}
     .first-pro{flex-direction: column;}
     .mcdonalds .pro-info{width: 100%;}
     .pro-info{padding-top:10px;}
-    .pro-img{width: 80%;}
+    .pro-img{width: 7%;}
     .nav-list ul li a{font-size: 15px;}
 }   
 @media screen and (max-width:520px) {

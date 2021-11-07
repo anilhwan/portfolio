@@ -150,7 +150,7 @@ if (window.matchMedia('(min-width: 768px)').matches){
 $(document).mouseup(function (e){
     var container = $('.pop');
     if(container.has(e.target).length === 0){
-      container.css('display','none');
+      container.fadeOut();
       $('body').removeClass('scroll');
     }
   });
