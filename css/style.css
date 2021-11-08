@@ -103,7 +103,7 @@ footer p{text-align: center;}
     .first-pro{flex-direction: column;}
     .mcdonalds .pro-info{width: 100%;}
     .pro-info{padding-top:10px;}
-    .pro-img{width: 7%;}
+    .pro-img{width: 70%;}
     .nav-list ul li a{font-size: 15px;}
 }   
 @media screen and (max-width:520px) {
