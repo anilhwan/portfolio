@@ -6,9 +6,9 @@
 /* 상단메뉴 */
 .header{position: fixed; z-index: 999; width: 100%; background: rgba(255, 255, 255, .5); top:-105px; transition: all .3s; box-shadow: 0 0 5px 1px rgb(0,0,0,.5);}
 #nav{display: flex; justify-content: space-between; align-items: center;}
-.nav-icon{flex: 1 1 30%; -ms-flex:1 1 30%}
+.nav-icon{flex: 1 1 30%;}
 .nav-icon img{width: 50%; cursor: pointer;}
-.nav-list{flex: 1 1 70%; -ms-flex:1 1 70%}
+.nav-list{flex: 1 1 70%;}
 .nav-list ul{display: flex; justify-content: space-between; width: 100%;}
 .nav-list ul li{width: 25%; text-align: center;}
 .nav-list ul li a{text-transform: uppercase; color: #000; font-weight: bold; line-height: 80px; display: block; font-size: 20px;}
