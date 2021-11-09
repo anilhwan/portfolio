@@ -1,3 +1,13 @@
+// 익스플로러 접속시 엣지로 변환
+function noIE(msg){
+    if(navigator.userAgent.indexOf('Trident') > 0){
+        location.href = "microsoft-edge:" + location.href;
+        alert(msg)
+        setTimeout(close);
+    }
+}
+noIE('인터넷 익스플로러에서는 지원을 하지않습니다. 엣지창을 확인해주세요.');
+
 // 원페이지 스크롤 페이지
 
 var wheelDelta=0;   //휠 이벤트 발생시 반환값 확인 변수
