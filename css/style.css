@@ -129,6 +129,7 @@ footer p{text-align: center;}
     .container{padding-top:50px;}
     .thankyou{font-size: 25px;}
     .pro-info h2,h3{font-size: 18px;}
+    .top_circles .circles{width: 150px !important;height: 150px!important;}
 }
 @media screen and (max-width:400px) {
     .contact-box ul{height: 90%;}
