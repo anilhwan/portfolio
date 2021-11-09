@@ -6,7 +6,7 @@ function noIE(msg){
         setTimeout(close);
     }
 }
-noIE('이 사이트는 Microsoft Edge에서 더 잘 작동합니다. 새 창을 확인해주세요.');
+noIE('이 사이트는 Microsoft Edge에서 더 잘 작동합니다. 새 창을 확인해주세요. 계속 보시려면 다음 확인창에서 아니요를 누르세요');
 // 원페이지 스크롤 페이지
 
 var wheelDelta=0;   //휠 이벤트 발생시 반환값 확인 변수
@@ -77,21 +77,16 @@ $(window).scroll(function(){
         }
     });
 });
-//------------------------------------------------------- 
-
-// 타이핑효과
-var text = document.getElementById("text");
-var typewriter = new Typewriter(text, {
-    loop: true,
-    autoStart:true
-});
-typewriter.typeString('어서오세요, 안일환 포트폴리오 입니다.')
-    .pauseFor(500)
-    .deleteAll()
-    .typeString('방문해주셔서 감사합니다.')
-    .pauseFor(500)
-    .deleteAll()
-    .start();
+// 메인페이지 타이핑효과
+var typed = new Typed('.typed', {
+    strings: ["어서오세요, 안일환 포트폴리오 입니다.", "방문해주셔서 감사합니다."],
+    typeSpeed: 50,
+    backSpeed: 50,
+    fadeOut: true,
+	cursorChar: '|',
+	loop: true
+  });
+  
 // 포트폴리오 스와이퍼
     var swiper = new Swiper(".mySwiper", {
         direction: "horizontal",

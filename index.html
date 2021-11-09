@@ -31,11 +31,11 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
     <script src="js/all.min.js"></script>
     <script src="js/jquery-2.2.4.min.js"></script>
-    <script src="js/core.js"></script>
-    <script src="js/swiper-bundle.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/typed.min.js"></script>
     <script src="js/script.js" defer></script>
 </head>
 <body>
@@ -56,9 +56,9 @@
                     <div class="nav-list">
                         <ul class="pc">
                             <li><a href="#section1" title="main">main</a></li>
-                            <li><a href="#profile" title="Profile">Profile</a></li>
-                            <li><a href="#project" title="Project">Project</a></li>
-                            <li><a href="#contact" title="Contact">Contact</a></li>
+                            <li><a href="#profile" title="profile">Profile</a></li>
+                            <li><a href="#project" title="project">Project</a></li>
+                            <li><a href="#contact" title="contact">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -76,7 +76,10 @@
                     <div class="main-content">
                         <p class="name">1HWAN</p>
                         <p class="main-title">Web Publisher</p>
-                        <p class="main-info" id="text">어서오세요, 안일환 포트폴리오 입니다.</p>
+                        <p class="main-info">
+                            <span class="ir_so">어서오세요, 안일환 포트폴리오 입니다.</span>
+                            <span class="typed"></span>
+                        </p>
                         <span class="down"><i class="far fa-laugh fa-pulse"></i>Click</span>
                     </div>
                 </div>
@@ -131,8 +134,8 @@
                 <div class="swiper mySwiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide fire">
-                            <div class="left"><i class="fas fa-arrow-circle-left fa-2x"></i></i></div>
-                            <div class="right"><i class="fas fa-arrow-circle-right fa-2x"></i></i></div>  
+                            <div class="left"><i class="fas fa-arrow-circle-left fa-2x"></i></div>
+                            <div class="right"><i class="fas fa-arrow-circle-right fa-2x"></i></div>  
                             <div class="first-pro">
                                 <div class="pro-img">
                                     <img src="img/fire.png" alt="소방청">
@@ -148,8 +151,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide ranking">
-                            <div class="left"><i class="fas fa-arrow-circle-left fa-2x"></i></i></div>
-                            <div class="right"><i class="fas fa-arrow-circle-right fa-2x"></i></i></div>  
+                            <div class="left"><i class="fas fa-arrow-circle-left fa-2x"></i></div>
+                            <div class="right"><i class="fas fa-arrow-circle-right fa-2x"></i></div>  
                             <div class="first-pro">
                                 <div class="pro-img">
                                     <img src="img/ranking.png" alt="랭킹닭컴">
@@ -165,8 +168,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide mcdonalds">
-                            <div class="left"><i class="fas fa-arrow-circle-left fa-2x"></i></i></div>
-                            <div class="right"><i class="fas fa-arrow-circle-right fa-2x"></i></i></div>
+                            <div class="left"><i class="fas fa-arrow-circle-left fa-2x"></i></div>
+                            <div class="right"><i class="fas fa-arrow-circle-right fa-2x"></i></div>
                             <div class="first-pro">
                                 <div class="pro-img">
                                     <img src="img/mcdonalds.png" alt="포트폴리오">
@@ -182,8 +185,8 @@
                             </div>
                         </div>
                         <div class="swiper-slide portfolio">
-                            <div class="left"><i class="fas fa-arrow-circle-left fa-2x"></i></i></div>
-                            <div class="right"><i class="fas fa-arrow-circle-right fa-2x"></i></i></div>
+                            <div class="left"><i class="fas fa-arrow-circle-left fa-2x"></i></div>
+                            <div class="right"><i class="fas fa-arrow-circle-right fa-2x"></i></div>
                             <div class="first-pro">
                                 <div class="pro-img">
                                     <img src="img/myportpolio.png" alt="포트폴리오">
