@@ -37,6 +37,18 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/typed.min.js"></script>
     <script src="js/script.js" defer></script>
+    <!--[if (lt ie 10)]>
+        <script>
+            function noIE(msg){
+                if(navigator.userAgent.indexOf('Trident') > 0){
+                    location.href = "microsoft-edge:" + location.href;
+                    alert(msg)
+                    setTimeout(close);
+                }
+            }
+            noIE('IE 9버전 이하는 Microsoft Edge에서 더 잘 작동합니다. 새 창을 확인해주세요.');
+        </script>
+    <![endif]-->
 </head>
 <body>
     <ul id="skip">

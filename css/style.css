@@ -46,7 +46,7 @@
 .pro-info p{padding:20px 0;}
 .fire .pro-info p{border-top: 2px solid #f2d300;border-bottom:2px solid #f2d300;}
 .ranking .pro-info p{border-top: 2px solid #FF7E32;border-bottom:2px solid #FF7E32;}
-.portfolio .pro-info p{border-top: 2px solid #3e93f5;border-bottom:2px solid #3e93f5;}
+.portfolio .pro-info p{border-top: 2px solid #3e93f5;border-bottom:2px solid #3e93f5;}  
 .mcdonalds .pro-info p{border-top: 2px solid #ffbc0d;border-bottom:2px solid #ffbc0d;}
 .pro-info span{width: 100%;height: 50px;display: block; border:1px solid #ddd;text-align: center; line-height: 50px;}
 .fire span{background-color: #f2d300;}
