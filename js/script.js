@@ -1,13 +1,13 @@
-// 익스플로러 접속시 엣지로 변환
-function noIE(msg){
-    if(navigator.userAgent.indexOf('Trident') > 0){
-        location.href = "microsoft-edge:" + location.href;
-        alert(msg)
-        setTimeout(close);
-    }
-}
-noIE('이 사이트는 Microsoft Edge에서 더 잘 작동합니다. 새 창을 확인해주세요. 계속 보시려면 다음 확인창에서 아니요를 누르세요');
-// 원페이지 스크롤 페이지
+// // 익스플로러 접속시 엣지로 변환
+// function noIE(msg){
+//     if(navigator.userAgent.indexOf('Trident') > 0){
+//         location.href = "microsoft-edge:" + location.href;
+//         alert(msg)
+//         setTimeout(close);
+//     }
+// }
+// noIE('이 사이트는 Microsoft Edge에서 더 잘 작동합니다. 새 창을 확인해주세요. 계속 보시려면 다음 확인창에서 아니요를 누르세요');
+// // 원페이지 스크롤 페이지
 
 var wheelDelta=0;   //휠 이벤트 발생시 반환값 확인 변수
 var browser=0;      //파이어폭스 브라우자 판별 변수
@@ -37,7 +37,7 @@ $('.section').each(function(index){
 });
 // 상단메뉴고정
 var header=$('.header');
-let headerOffsetTop=$('#section2').offset().top;
+var headerOffsetTop=$('#section2').offset().top;
 $(window).scroll(function(){
     if ($(this).scrollTop()>=30) {
         header.css('top','0px')
