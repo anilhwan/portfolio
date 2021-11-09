@@ -6,7 +6,7 @@ function noIE(msg){
         setTimeout(close);
     }
 }
-noIE('인터넷 익스플로러에서는 지원을 하지않습니다. 확인해주세요.');
+noIE('이 사이트는 Microsoft Edge에서 더 잘 작동합니다. 새 창을 확인해주세요.');
 // 원페이지 스크롤 페이지
 
 var wheelDelta=0;   //휠 이벤트 발생시 반환값 확인 변수
