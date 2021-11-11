@@ -30,7 +30,7 @@
 .my-info>div{width: 50%;}
 .my-info>div>h3{text-transform: uppercase; margin-bottom: 20px; font-size: 25px;}
 .my-info>div>p{margin-bottom: 20px; font-size: 20px;}
-.my-pic{width: 300px;height: 300px; background: url(../img/me.jpg) no-repeat center 20%; border-radius: 50%; background-size: cover; box-shadow: 0 0 10px 5px #a4b8e6;}
+.my-pic{width: 300px;height: 300px; background: url(../img/me.jpg) no-repeat 0 100%; border-radius: 50%; background-size: cover; box-shadow: 0 0 10px 5px #a4b8e6;}
 .skill-img{display: flex;flex-wrap: wrap;}
 .skill-img li{width: 25%; padding:20px 0;}
 .skill-img li img{width: 70%;}
